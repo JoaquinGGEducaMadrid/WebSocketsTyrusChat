@@ -42,7 +42,8 @@ function connect() {
         url = "ws://localhost:8080/ws/chat";
     } else {
         // WebSocket en Render (mismo dominio, sin puerto)
-        url = "wss://" + location.host + "/ws/chat";
+        url = "wss://websocketstyruschat.onrender.com/ws/chat";
+;
     }
 
     ws = new WebSocket(url);
@@ -83,3 +84,4 @@ function sendMsg() {
 
 </body>
 </html>
+
